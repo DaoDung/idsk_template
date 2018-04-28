@@ -1,4 +1,4 @@
-assetPath: /govuk_template/assets/
+assetPath: /idsk_template/assets/
 head: >
   <style>
     main { max-width: 960px; margin: 0 15px; }
@@ -7,29 +7,29 @@ head: >
   </style>
 content: >
   <main role="main">
-    <h1>govuk_template</h1>
+    <h1>idsk_template</h1>
 
     <h2>Examples</h2>
 
     <p>
-      These are a collection of auto-generated examples of the current govuk_template release showing how you can use the template.
+      These are a collection of auto-generated examples of the current idsk_template release showing how you can use the template.
     </p>
 
     <ul>
       <li>
-        <strong><a href='/govuk_template/example-mvp.html'>GOV.UK standard header</a></strong><br>
-        The standard header as used on information pages on GOV.UK.
+        <strong><a href='/idsk_template/example-mvp.html'>ID-SK standard header</a></strong><br>
+        The standard header as used on information pages on ID-SK.
       </li>
       <li>
-        <strong><a href='/govuk_template/example-proposition-title.html'>GOV.UK standard header – with service title</a></strong><br>
+        <strong><a href='/idsk_template/example-proposition-title.html'>ID-SK standard header – with service title</a></strong><br>
         If your service is more than a few pages long, you can help users understand where they are by adding the service title.
       </li>
       <li>
-        <strong><a href='/govuk_template/example-proposition-menu.html'>GOV.UK standard header – with propositional navigation</a></strong><br>
+        <strong><a href='/idsk_template/example-proposition-menu.html'>ID-SK standard header – with propositional navigation</a></strong><br>
         If you need to include basic navigation, contact or account management links.
       </li>
       <li>
-        <strong><a href='/govuk_template/example-proposition-link.html'>GOV.UK standard header – with propositional link</a></strong><br>
+        <strong><a href='/idsk_template/example-proposition-link.html'>ID-SK standard header – with propositional link</a></strong><br>
         If you need to include a single navigation link.
       </li>
     </ul>
@@ -37,30 +37,30 @@ content: >
     <h2>Downloads</h2>
 
     <p>
-      You can get a development version of the template from <a href="https://github.com/alphagov/govuk_template">github.com/alphagov/govuk_template<a>.
+      You can get a development version of the template from <a href="https://github.com/id-sk/idsk_template">github.com/id-sk/idsk_template<a>.
     </p>
 
     <p>
-      View the <a href="https://github.com/alphagov/govuk_template/blob/master/CHANGELOG.md">changelog</a> to find out what has changed in version VERSION_NAME.
+      View the <a href="https://github.com/id-sk/idsk_template/blob/master/CHANGELOG.md">changelog</a> to find out what has changed in version VERSION_NAME.
     </p>
 
-    <p>Download compiled versions of the govuk_template (vVERSION_NAME):</p>
+    <p>Download compiled versions of the idsk_template (vVERSION_NAME):</p>
     <ul>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/govuk_template-VERSION_NAME.tgz'>Plain html</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/mustache_govuk_template-VERSION_NAME.tgz'>Mustache</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/mustache_inheritance_govuk_template-VERSION_NAME.tgz'>Mustache inheritance</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/play_govuk_template-VERSION_NAME.tgz'>Play</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/liquid_govuk_template-VERSION_NAME.tgz'>Liquid</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/jinja_govuk_template-VERSION_NAME.tgz'>Jinja</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/ejs_govuk_template-VERSION_NAME.tgz'>Embeded JavaScript</a></li>
-      <li><a href='https://github.com/alphagov/govuk_template/releases/download/vVERSION_NAME/django_govuk_template-VERSION_NAME.tgz'>Django</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/idsk_template-VERSION_NAME.tgz'>Plain html</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/mustache_idsk_template-VERSION_NAME.tgz'>Mustache</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/mustache_inheritance_idsk_template-VERSION_NAME.tgz'>Mustache inheritance</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/play_idsk_template-VERSION_NAME.tgz'>Play</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/liquid_idsk_template-VERSION_NAME.tgz'>Liquid</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/jinja_idsk_template-VERSION_NAME.tgz'>Jinja</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/ejs_idsk_template-VERSION_NAME.tgz'>Embeded JavaScript</a></li>
+      <li><a href='https://github.com/id-sk/idsk_template/releases/download/vVERSION_NAME/django_idsk_template-VERSION_NAME.tgz'>Django</a></li>
     </ul>
 
     <p>
-      For Rails projects govuk_template is pushed to <a href="http://rubygems.org/gems/govuk_template">rubygems</a>.
+      For Rails projects idsk_template is pushed to <a href="http://rubygems.org/gems/idsk_template">rubygems</a>.
     </p>
 
     <p>
-      For Node.js projects, govuk_template is available on npm as a <a href="https://www.npmjs.org/package/govuk_template_mustache">Mustache template</a> or an <a href="https://www.npmjs.org/package/govuk_template_ejs">EmbeddedJavaScript template</a>.
+      For Node.js projects, idsk_template is available on npm as a <a href="https://www.npmjs.org/package/idsk_template_mustache">Mustache template</a> or an <a href="https://www.npmjs.org/package/idsk_template_ejs">EmbeddedJavaScript template</a>.
     </p>
   </main>
