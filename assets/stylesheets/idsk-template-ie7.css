@@ -1,4 +1,4 @@
-/* govuk_frontend_toolkit includes */
+/* idsk_frontend_toolkit includes */
 #global-header .header-wrapper, #global-header .header-wrapper .header-global, #global-header .header-wrapper .header-global .header-logo, #global-header .header-proposition #proposition-link,
 #global-header .header-proposition #proposition-links, #footer .footer-meta {
   zoom: 1; }
@@ -8,7 +8,7 @@
     display: block;
     clear: both; }
 
-#global-header-bar, #global-cookie-message p, #footer .footer-wrapper {
+#global-cookie-message p, #footer .footer-wrapper {
   max-width: 960px;
   width: 960px;
   margin: 0 15px;
@@ -29,7 +29,7 @@
   width: device-width; }
 
 html, body, button, input, table, td, th {
-  font-family: "nta", Arial, sans-serif; }
+  font-family: "Source Sans Pro", "Arial", sans-serif; }
 
 html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
   margin: 0;
@@ -68,7 +68,7 @@ html {
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 1 */
-  background-color: #dee0e2; }
+  background-color: #eaeaea; }
 
 /*
   Force the scrollbar to always display in IE10/11
@@ -92,7 +92,7 @@ fieldset {
   padding: 0; }
 
 a:link {
-  color: #005ea5; }
+  color: #215da8; }
 
 a:visited {
   color: #4c2c92; }
@@ -219,7 +219,7 @@ a:focus {
 
 /* Make links slightly darker when focused to improve contrast. */
 a:link:focus {
-  color: #005798; }
+  color: #1f579d; }
 
 /* Make skiplinks visible when they are tabbed to */
 .skiplink {
@@ -274,20 +274,20 @@ button:focus {
     clear: both; }
 
 #global-header {
-  background-color: #0b0c0c;
+  background-color: #313133;
   width: 100%; }
   #global-header .header-wrapper {
-    background-color: #0b0c0c;
+    background-color: #313133;
     max-width: 990px;
     margin: 0 auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 15px;
     padding-right: 15px;
     width: 990px; }
     #global-header .header-wrapper .header-global .header-logo {
       float: left;
-      width: 33.33%; }
+      width: 30%; }
       @media screen and (max-width: 379px) {
         #global-header .header-wrapper .header-global .header-logo {
           width: auto;
@@ -298,15 +298,18 @@ button:focus {
       margin-top: 2px; }
   #global-header.with-proposition .header-wrapper .header-global {
     float: left;
-    width: 33.33%; }
+    width: 25%;
+    min-width: 240px; }
     #global-header.with-proposition .header-wrapper .header-global .header-logo,
     #global-header.with-proposition .header-wrapper .header-global .site-search {
       width: 100%; }
   #global-header.with-proposition .header-wrapper .header-proposition {
-    width: 66.66%;
+    width: 55%;
     float: left; }
     #global-header.with-proposition .header-wrapper .header-proposition .content {
-      margin: 0 15px; }
+      margin: 8px 15px 0 15px; }
+  #global-header.with-proposition.with-user .header-wrapper .header-proposition {
+    width: 45%; }
   #global-header #logo {
     float: left;
     overflow: visible;
@@ -316,15 +319,7 @@ button:focus {
     line-height: 1;
     text-decoration: none;
     text-rendering: optimizeLegibility;
-    border-bottom: 1px solid transparent;
-    background: url(images/gov.uk_logotype_crown.png?0.24.0-idsk-alpha.3) no-repeat;
-    background-size: 36px 32px;
-    background-position: 0 0;
-    background-image: url(images/gov.uk_logotype_crown-1x.png?0.24.0-idsk-alpha.3); }
-    #global-header #logo img {
-      margin: 2px 1px 0 0;
-      vertical-align: bottom;
-      visibility: hidden; }
+    border-bottom: 1px solid transparent; }
     #global-header #logo:hover, #global-header #logo:focus {
       text-decoration: none;
       border-bottom-color: white; }
@@ -332,12 +327,12 @@ button:focus {
     padding-top: 10px;
     padding-top: 0; }
     #global-header .header-proposition #proposition-name {
-      font-family: "nta", Arial, sans-serif;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
       font-weight: 400;
       text-transform: none;
       font-size: 18px;
       line-height: 1.2;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 1.25;
       font-weight: bold;
       color: white;
@@ -347,7 +342,7 @@ button:focus {
     #global-header .header-proposition a#proposition-name:focus {
       color: #0b0c0c; }
     #global-header .header-proposition a.menu {
-      font-family: "nta", Arial, sans-serif;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
       font-weight: 400;
       text-transform: none;
       font-size: 14px;
@@ -358,7 +353,10 @@ button:focus {
       display: block;
       float: right;
       text-decoration: none;
+      padding-top: 4px;
+      margin-left: 10px;
       padding-top: 6px;
+      margin-left: 0;
       display: none; }
       #global-header .header-proposition a.menu:hover {
         text-decoration: underline; }
@@ -372,14 +370,16 @@ button:focus {
       #global-header .header-proposition a.menu.js-visible:after {
         content: " \25B2"; }
     #global-header .header-proposition #proposition-menu {
-      margin-top: 5px; }
+      margin-top: 2px;
+      border-top: 1px #515153 solid; }
       #global-header .header-proposition #proposition-menu.no-proposition-name {
         margin-top: 37px; }
     #global-header .header-proposition #proposition-link,
     #global-header .header-proposition #proposition-links {
       clear: both;
       margin: 2px 0 0 0;
-      padding: 0; }
+      padding: 0;
+      list-style-type: none; }
       .js-enabled #global-header .header-proposition #proposition-link, .js-enabled
       #global-header .header-proposition #proposition-links {
         display: none;
@@ -395,24 +395,17 @@ button:focus {
         border-bottom: 1px solid #2e3133;
         display: block;
         width: auto;
-        padding: 0 15px 0 0;
+        padding: 0 20px 0 0;
         border-bottom: 0; }
         #global-header .header-proposition #proposition-link li.clear-child,
         #global-header .header-proposition #proposition-links li.clear-child {
           clear: left; }
       #global-header .header-proposition #proposition-link a,
       #global-header .header-proposition #proposition-links a {
-        color: white;
+        color: #c1d0e2;
         text-decoration: none;
-        font-family: "nta", Arial, sans-serif;
-        font-weight: 700;
-        text-transform: none;
-        font-size: 12px;
-        line-height: 1.25;
-        font-size: 14px;
-        line-height: 1.42857;
-        font-family: "nta", Arial, sans-serif;
-        font-weight: 700;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-weight: 400;
         text-transform: none;
         font-size: 14px;
         line-height: 1.14286;
@@ -424,7 +417,7 @@ button:focus {
           text-decoration: underline; }
         #global-header .header-proposition #proposition-link a.active,
         #global-header .header-proposition #proposition-links a.active {
-          color: #1d8feb; }
+          color: white; }
         #global-header .header-proposition #proposition-link a:focus,
         #global-header .header-proposition #proposition-links a:focus {
           color: #0b0c0c; }
@@ -434,11 +427,98 @@ button:focus {
       float: none; }
       .js-enabled #global-header .header-proposition #proposition-link {
         display: block; }
+  #global-header .header-user {
+    width: 100%;
+    min-width: 155px;
+    width: 20%;
+    float: right;
+    text-align: right; }
+    #global-header .header-user .user-menu {
+      position: absolute;
+      display: block;
+      right: 15px;
+      top: 25px;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-top: 5px;
+      vertical-align: top;
+      position: static; }
+      #global-header .header-user .user-menu #user-icon {
+        background: url("images/icon_user.png") no-repeat;
+        display: block;
+        width: 28px;
+        height: 28px; }
+    #global-header .header-user #user-signup {
+      position: absolute;
+      font-size: 12px;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      top: 25px;
+      right: 15px;
+      border: 1px white solid;
+      display: block;
+      float: right;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      top: 20px;
+      width: 125px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 40px;
+      position: static; }
+      #global-header .header-user #user-signup:hover {
+        background: rgba(0, 0, 0, 0.4);
+        text-decoration: none;
+        color: white;
+        outline: none; }
+    #global-header .header-user #user-links {
+      background: rgba(0, 0, 0, 0.4);
+      display: block;
+      padding: 15px;
+      margin: 20px 0 -20px 0;
+      text-align: right;
+      margin-left: -15px;
+      margin-right: -15px;
+      display: inline-block;
+      padding: 0;
+      text-align: left;
+      margin: 0 0 0 9px;
+      background: transparent;
+      max-width: 65%; }
+      #global-header .header-user #user-links a#user-name {
+        display: block;
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        text-decoration: none; }
+        #global-header .header-user #user-links a#user-name:active, #global-header .header-user #user-links a#user-name:hover {
+          text-decoration: underline;
+          outline: none;
+          background: transparent; }
+      #global-header .header-user #user-links a#user-logout {
+        display: block;
+        color: #c1d0e2;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none; }
+        #global-header .header-user #user-links a#user-logout:active, #global-header .header-user #user-links a#user-logout:hover {
+          text-decoration: underline;
+          outline: none;
+          background: transparent; }
+      .js-enabled #global-header .header-user #user-links {
+        display: none;
+        display: inline-block; }
+        .js-enabled #global-header .header-user #user-links.js-visible {
+          display: block; }
 
 /* Global header bar */
 #global-header-bar {
-  height: 10px;
-  background-color: #005ea5;
+  height: 3px;
+  background: url("images/stripe.png");
   font-size: 0; }
 
 /* Global cookie message */
@@ -452,7 +532,7 @@ button:focus {
   padding-top: 10px;
   padding-bottom: 10px; }
   #global-cookie-message p {
-    font-family: "nta", Arial, sans-serif;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 14px;
@@ -464,23 +544,23 @@ button:focus {
 
 /* Global footer */
 #footer {
-  background-color: #dee0e2;
-  border-top: 1px solid #a1acb2; }
+  background-color: #eaeaea; }
+  #footer.with-logo .open-government-licence {
+    padding-left: 85px; }
   #footer .footer-wrapper {
-    background-color: #dee0e2;
-    padding-top: 20px;
-    padding-top: 60px; }
+    background-color: #eaeaea;
+    padding-top: 30px; }
   #footer a {
-    color: #454a4c; }
+    color: #005ea5; }
     #footer a:hover {
-      color: #171819; }
+      color: #0b0c0c; }
   #footer h2 {
-    font-family: "nta", Arial, sans-serif;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
     font-weight: 400;
     text-transform: none;
     font-size: 18px;
     line-height: 1.2;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.25;
     font-weight: bold;
     color: #0b0c0c;
@@ -491,7 +571,7 @@ button:focus {
     padding-bottom: 60px;
     clear: both;
     font-size: 0;
-    color: #454a4c; }
+    color: #0b0c0c; }
     #footer .footer-meta .footer-meta-inner {
       display: inline-block;
       vertical-align: bottom;
@@ -500,7 +580,7 @@ button:focus {
       float: left;
       display: block; }
       #footer .footer-meta .footer-meta-inner ul {
-        font-family: "nta", Arial, sans-serif;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
         font-weight: 400;
         text-transform: none;
         font-size: 14px;
@@ -509,9 +589,9 @@ button:focus {
         line-height: 1.5;
         display: inline-block;
         list-style: none;
-        margin: 0 0 1.5em 0;
+        margin: 5px 0;
         padding: 0;
-        margin: 0 0 1em 0; }
+        margin: 5px 0; }
         #footer .footer-meta .footer-meta-inner ul li {
           display: inline-block;
           margin: 0 15px 0 0;
@@ -520,8 +600,7 @@ button:focus {
           padding-right: 15px; }
       #footer .footer-meta .footer-meta-inner .open-government-licence {
         clear: left;
-        position: relative;
-        padding-left: 53px; }
+        position: relative; }
         #footer .footer-meta .footer-meta-inner .open-government-licence .logo {
           margin-bottom: 1em;
           padding-top: 0;
@@ -536,13 +615,13 @@ button:focus {
             height: 17px;
             overflow: hidden;
             text-indent: -999em;
-            background: url(images/open-government-licence.png?0.24.0-idsk-alpha.3) 0 0 no-repeat; }
+            background: url(images/open-government-licence.png?0.24.1) 0 0 no-repeat; }
             @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
               #footer .footer-meta .footer-meta-inner .open-government-licence .logo a {
-                background-image: url(images/open-government-licence_2x.png?0.24.0-idsk-alpha.3);
+                background-image: url(images/open-government-licence_2x.png?0.24.1);
                 background-size: 41px 17px; } }
         #footer .footer-meta .footer-meta-inner .open-government-licence p {
-          font-family: "nta", Arial, sans-serif;
+          font-family: "Source Sans Pro", "Arial", sans-serif;
           font-weight: 400;
           text-transform: none;
           font-size: 14px;
@@ -552,35 +631,28 @@ button:focus {
           margin: 0;
           padding-top: 0.1em; }
     #footer .footer-meta .copyright {
-      font-family: "nta", Arial, sans-serif;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
       font-weight: 400;
       text-transform: none;
       font-size: 14px;
       line-height: 1.14286;
       font-size: 16px;
       line-height: 1.25;
-      margin: 30px 0 0 0;
+      text-align: left;
+      margin: 0 0 30px 0;
       width: 100%;
       display: block;
+      vertical-align: top;
       display: inline-block;
       text-align: inherit;
       width: 25%;
-      padding-top: 15px;
-      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 0;
       float: right;
       height: 150px;
       width: 24%; }
       #footer .footer-meta .copyright a {
         display: block;
-        background-image: url(images/govuk-crest.png?0.24.0-idsk-alpha.3);
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        background-position: 100% 0%;
-        text-align: center;
-        text-decoration: none;
-        text-align: right;
-        padding: 115px 0 0 0; }
-        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-          #footer .footer-meta .copyright a {
-            background-image: url(images/govuk-crest-2x.png?0.24.0-idsk-alpha.3);
-            background-size: 125px 102px; } }
+        text-decoration: none; }
+        #footer .footer-meta .copyright a img.logo {
+          max-width: 218px; }
