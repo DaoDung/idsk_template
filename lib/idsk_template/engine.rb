@@ -15,6 +15,8 @@ module IdskTemplate
         gov.uk_logotype_crown_invert_trans.png
         gov.uk_logotype_crown.svg
         opengraph-image.png
+        slovensko_sk_logo.png
+        stripe.png
       )
     end
   end

@@ -3,7 +3,7 @@
 | Template block name       |  Location / Information                         |   Default template values
 |---                        |---                                              |---
 | top_of_page               | Before doctype                                  | Insertion point
-| html_lang                 | value of the HTML lang attribute                | en
+| html_lang                 | value of the HTML lang attribute                | sk
 | page_title                | Text inside the `<title>` element               | GOV.UK - The best place to find government services and information
 | head                      | Before closing `</head>` element                | Insertion point
 | body_classes              | Classes to be added to the `<body>` element     | Insertion point
@@ -11,9 +11,9 @@
 | skip_link_message         | Text inside the skip to main content link       | Skip to main content
 | cookie_message            | Text inside the cookie message banner           | `<p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>`
 | header_class              | `<header>` element                              | Set the value of header_class to [with-proposition](usage.md#propositional-title-and-navigation) to show the propositional navigation
-| homepage_url              | URL of anchor element wrapping logo             | https://www.gov.uk/
-| logo_link_title           | Title of anchor element wrapping logo           | Go to the GOV.UK homepage
-| global_header_text        | Text next to the crown image                    | GOV.UK
+| homepage_url              | URL of anchor element wrapping logo             | https://www.slovensko.sk/
+| logo_link_title           | Title of anchor element wrapping logo           | Vrátiť sa na úvodnú stránku slovensko.sk
+| global_header_text        | Text next to the crown image                    | slovensko.sk
 | inside_header             | Inside parent `.header-global`                  | Insertion point
 | proposition_header        | Inside parent `.header-wrapper`                 | Add a [propositional title and navigation links](usage.md#propositional-title-and-navigation)
 | after_header              | After closing `</header>` element               | Insertion point

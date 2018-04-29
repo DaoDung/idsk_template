@@ -3,10 +3,15 @@
 $proposition-border: #2e3133;
 // Based on GOV.UK brand blue but slightly lighter so it hits contrast on the
 // black header bar when used as copy colour.
-$proposition-active-nav: #1d8feb;
+$proposition-nav: #C1D0E2;
+$proposition-active-nav: $white;
 
-$footer-background: $grey-3;
-$footer-border-top: #a1acb2;
-$footer-link: #454a4c;
-$footer-link-hover: #171819;
-$footer-text: $footer-link;
+$user-nav: #C1D0E2;
+$user-active-nav: $white;
+
+$footer-background: #EAEAEA;
+$footer-link: #005EA5;
+$footer-link-hover: $black;
+$footer-text: $black;
+
+$header-background: #313133;

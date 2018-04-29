@@ -13,7 +13,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
     @extend %contain-floats;
-    @include media(tablet){
+    @include media(tablet) {
       padding-left: $gutter-half;
       padding-right: $gutter-half;
     }
@@ -27,7 +27,7 @@
         @extend %contain-floats;
         float: left;
 
-        @include media(desktop){
+        @include media(desktop) {
           width: 30%;
         }
         @media screen and (max-width: 379px) {
@@ -64,7 +64,7 @@
           float: left;
         }
         .content {
-          margin: 8px 15px 0 15px;
+          margin: 6px 15px 0 15px;
         }
       }
     }
@@ -83,17 +83,19 @@
   #logo {
     float: left;
     overflow: visible;
-
-    color: $white;
-    font-weight: bold;
-    font-size: 30px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 35px;
     line-height: 1;
     text-decoration: none;
     text-rendering: optimizeLegibility;
     border-bottom: 1px solid transparent;
+    color: $white;
+    letter-spacing: -2.8px;
 
     &:hover,
     &:focus {
+      background-color: transparent;
+      outline: none;
       text-decoration: none;
       border-bottom-color: $white;
     }
@@ -104,8 +106,9 @@
       padding-top: 0;
     }
     #proposition-name {
-      @include core-20;
-      font-weight: bold;
+      @include core-24;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
       color: $white;
       text-decoration: none;
     }
@@ -113,10 +116,13 @@
       text-decoration: underline;
     }
     a#proposition-name:focus {
-      color: $text-colour;
+      color: $white;
+      background-color: transparent;
+      outline: none;
     }
     a.menu {
       @include core-16;
+      font-family: 'Source Sans Pro', sans-serif;
       color: $white;
       display: block;
       float: right;
@@ -132,6 +138,10 @@
       }
       &:hover {
         text-decoration: underline;
+      }
+      &:focus {
+        background: transparent;
+        outline: none;
       }
       &:after {
         display: inline-block;
@@ -197,6 +207,7 @@
         color: $proposition-nav;
         text-decoration: none;
         @include core-16;
+        font-family: 'Source Sans Pro', sans-serif;
 
         @include media(desktop) {
           line-height: 23px;
@@ -209,7 +220,9 @@
           color: $proposition-active-nav;
         }
         &:focus {
-          color: $black;
+          text-decoration: underline;
+          outline: none;
+          background: transparent;
         }
       }
     }
@@ -241,6 +254,11 @@
       display: block;
       right: 15px;
       top: 25px;
+
+      &:focus {
+        outline: none;
+        background: transparent;
+      }
 
       @include media(desktop) {
         display: inline-block;
@@ -275,7 +293,7 @@
       text-align: center;
 
 
-      &:hover, {
+      &:hover, &:focus {
         background: rgba(0, 0, 0, 0.4);
         text-decoration: none;
         color: $white;
@@ -324,7 +342,7 @@
         font-weight: 600;
         text-decoration: none;
 
-        &:active, &:hover {
+        &:active, &:hover, &:focus {
           text-decoration: underline;
           outline: none;
           background: transparent;
@@ -338,7 +356,7 @@
         line-height: 18px;
         text-decoration: none;
 
-        &:active, &:hover {
+        &:active, &:hover, &:focus {
           text-decoration: underline;
           outline: none;
           background: transparent;
