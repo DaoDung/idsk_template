@@ -1,3 +1,3 @@
 module IdskTemplate
-  VERSION = "0.24.0-idsk-alpha.3"
+  VERSION = "0.24.1"
 end
