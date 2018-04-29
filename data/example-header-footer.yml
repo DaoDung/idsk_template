@@ -1,0 +1,35 @@
+assetPath: /idsk_template/assets/
+htmlLang: "sk"
+cookieMessage: "<p>ID-SK uses cookies to make the site simpler. <a href=\"https://www.gov.uk/help/cookies\">Find out more about cookies</a></p>\n"
+headerClass: with-proposition with-user
+homepageUrl: "https://www.slovensko.sk/"
+logoLinkTitle: "Vrátiť sa na úvodnú stránku slovensko.sk"
+pageTitle: "ID-SK - Jednotný dizajn manuál elektronických služieb Slovenska"
+propositionHeader: |
+    <div class='header-proposition'>
+      <div class='content'>
+        <a href='/idsk_template/' id='proposition-name'>Daňové priznanie k dani z nehnuteľnosti</a>
+      </div>
+    </div>
+    <div class="header-user">
+      <a role='button' href='#user-links' class='js-header-toggle user-menu' aria-controls='navigation' aria-label='Show or hide User Navigation'><i id="user-icon"></i></a>
+      <div id="user-links">
+          <a href="#" id="user-name">Meno Priezvisko</a>
+          <a href="#" id="user-logout">Odhlásiť sa</a>
+      </div>
+    </div>
+licenceMessage: <
+  <p>Prevádzkovateľom služby je Ministerstvo financií Slovenskej republiky.<br />
+  Vytvorené v súlade s Jednotným dizajn manuálom elektronických služieb.</p>
+footerSupportLinks: <
+  <nav id='footer-menu'>
+      <ul id='footer-links'>
+          <li><a href='#'>Kontakt</a></li>
+          <li><a href='#'>Pomoc</a></li>
+          <li><a href='#'>English version</a></li>
+          <li><a href='#'>Ochrana osobných údajov</a></li>
+          <li><a href='#'>Vyhlásenie o prístupnosti</a></li>
+      </ul>
+  </nav>
+
+

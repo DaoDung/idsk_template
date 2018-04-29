@@ -1,0 +1,16 @@
+assetPath: /idsk_template/assets/
+htmlLang: "sk"
+cookieMessage: "<p>ID-SK uses cookies to make the site simpler. <a href=\"https://www.gov.uk/help/cookies\">Find out more about cookies</a></p>\n"
+headerClass: with-proposition with-user
+homepageUrl: "https://www.slovensko.sk/"
+logoLinkTitle: "Vrátiť sa na úvodnú stránku slovensko.sk"
+pageTitle: "ID-SK - Jednotný dizajn manuál elektronických služieb Slovenska"
+propositionHeader: |
+      <div class='header-proposition'>
+        <div class='content'>
+          <a href='#' id='proposition-name'>Daňové priznanie k dani z nehnuteľnosti</a>
+        </div>
+      </div>
+      <div class="header-user">
+        <a role='button' href='#' id="user-signup">Prihlásiť sa</a>
+      </div>
