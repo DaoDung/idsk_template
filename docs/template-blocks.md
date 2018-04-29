@@ -4,7 +4,7 @@
 |---                        |---                                              |---
 | top_of_page               | Before doctype                                  | Insertion point
 | html_lang                 | value of the HTML lang attribute                | sk
-| page_title                | Text inside the `<title>` element               | GOV.UK - The best place to find government services and information
+| page_title                | Text inside the `<title>` element               | ID-SK - Jednotný dizajn manuál elektronických služieb Slovenska
 | head                      | Before closing `</head>` element                | Insertion point
 | body_classes              | Classes to be added to the `<body>` element     | Insertion point
 | body_start                | After opening `<body>` element                  | Insertion point

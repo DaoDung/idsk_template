@@ -17,6 +17,7 @@ module IdskTemplate
         opengraph-image.png
         slovensko_sk_logo.png
         stripe.png
+        ministry_logo.png
       )
     end
   end

@@ -78,15 +78,21 @@
 
     <%= content_for?(:content) ? yield(:content) : yield %>
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
+    <div id="global-header-bar"></div>
+
+    <footer class="group js-footer with-logo" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
         <%= yield :footer_top %>
 
         <div class="footer-meta">
-          <div class="footer-meta-inner">
-            <%= yield :footer_support_links %>
+          <div class="copyright">
+            <a href="#">
+              <img src="<%= asset_path 'ministry_logo.png' %>" title="Ministerstvo financií Slovenskej republiky" alt="Ministerstvo financií Slovenskej republiky" class="logo">
+            </a>
+          </div>
 
+          <div class="footer-meta-inner">
             <div class="open-government-licence">
               <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
               <% if content_for?(:licence_message) %>
@@ -94,11 +100,9 @@
               <% else %>
                 <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
               <% end %>
-            </div>
-          </div>
 
-          <div class="copyright">
-            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/"><%= content_for?(:crown_copyright_message) ? yield(:crown_copyright_message) : "© Crown copyright" %></a>
+              <%= yield :footer_support_links %>
+            </div>
           </div>
         </div>
       </div>
