@@ -1,5 +1,6 @@
 #! /bin/bash
 set -e
+export PYTHONIOENCODING=utf-8
 
 rm -rf vendor/django_idsk_template/*
 
