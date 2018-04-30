@@ -20,7 +20,7 @@ context = {
     "crown_copyright_message": "Custom crown copyright message text",
 }
 
-content = render_to_string("test_template.html", context)
+content = render_to_string("test_template.html", context).encode('utf-8')
 
 with open("../../html_for_testing/django_integration_test_app.html", "w") as static_file:
     static_file.write(content)

@@ -1,6 +1,5 @@
 #! /bin/bash
 set -e
-export PYTHONIOENCODING=utf-8
 
 rm -rf vendor/jinja_idsk_template/*
 
