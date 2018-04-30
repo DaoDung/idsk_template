@@ -3,7 +3,7 @@ cache: bundler
 sudo: false
 env:
   global:
-  - secure: BP1+2SDhPKzEIJIkBPMWvxql5SSQ6Br5TwR4VcqwXovRRBMFiu9/mEASmYtZ5+MinOskt7YHgXFM6PT1LRoGsC+E+TghMZWw9j4zaM8OXR7hQAxrvkFMWIcD71ndxMzmXnQnWIi95l9nUaLJ05EYaZy5k79pugLYzMT1ZzIjesM=
+  - secure: "EHV2uIo6uvDFRNqST4AOBkKlGCIZLLYuDJJ/TyG9d74zoq1jCp5aj6VFH3tyiSusUNQaQalC6jy18zuccWi73lhUGhvGl+hsoNP3m8YxGmNlAKC7s2a6tAuEajFBs7ooUQ95a1NCcz88xxnNbPxkIm30RZa052GPDuxBm97eqo71x5dFrX4iqU7vlnKevf39nCCUue0sp/dlz8potJN7TjpsvcZhiNeHYGBZ67d3LJea+X0eGnrXExPgO7EErLt93K8YV1vAxQnW4vMos2cmSyveIrJo8/f+ZQLdpvoXPghmjM62uV/dpf5rHifuQLcDNHdfCbeld6iYplHmqNYPHJOlHpA3YhXdSJZTMM8wCNK6OxIjj9Athd2IdvRXtLYW2LDQOA12a/TGbwRQfCPNoVt3lGKdMG5AeYY2SSct524bNd49adpRPpQLCQQraqlv0m1N+JyW/ThEFYO/pVJyZXGrj2PgRAPECNelFeNuc0aPJoBAUSHof16+7l/IcqtEEAbAITHxTBp6dz4E+wzEwmtr1vFY6sitAFqiCnSEMPIYWc/TNbFMUThkA0qovUmGU7RnZhcKQ8iKqJJ5FQoyLbzbcs78qX7e26v2QBzHTiouPoJ9cgjnHC9NUFYHbTBIDlax8/nqT7UqyGa7xkcLvOMtojmIiN6P+q+QodwouJw="
 before_install:
 # Travis CI installs Node v0.10.36 with NPM v1.4.28 which is really old and 
 # doesn't support using authentication tokens from ~/.npmrc, so we need to
