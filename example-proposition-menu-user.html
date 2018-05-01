@@ -67,10 +67,23 @@
         <div class='header-proposition'>
   <div class='content'>
     <a href='#' id='proposition-name'>Daňové priznanie k dani z nehnuteľnosti</a>
+    <a role='button' href='#proposition-links' class='js-header-toggle menu' aria-controls='navigation' aria-label='Show or hide Top Level Navigation'>Menu</a>
+    <nav id='proposition-menu'>
+      <ul id='proposition-links' aria-label='Top Level Navigation'>
+        <li><a href='url-to-page-2'>Základné informácie</a></li>
+        <li><a href='url-to-page-1' class='active'>Formulár</a></li>
+        <li><a href='url-to-page-2'>Prílohy</a></li>
+        <li><a href='url-to-page-2'>Podpisy</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
 <div class="header-user">
-  <a role='button' href='#' id="user-signup">Prihlásiť sa</a>
+  <a role='button' href='#user-links' class='js-header-toggle user-menu' aria-controls='navigation' aria-label='Show or hide User Navigation'><i id="user-icon"></i></a>
+    <div id="user-links">
+      <a href="#" id="user-name">Dlhé Priezvisko</a>
+      <a href="#" id="user-logout">Odhlásiť sa</a>
+    </div>
 </div>
       </div>
     </header>
