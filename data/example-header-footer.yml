@@ -18,10 +18,18 @@ propositionHeader: |
           <a href="#" id="user-logout">Odhlásiť sa</a>
       </div>
     </div>
-licenceMessage: <
+footerTop: |
+  <div class="footer-logo">
+    <a href="#">
+      <img src="/idsk_template/assets/images/ministry_logo.png" title="Ministerstvo financií Slovenskej republiky" alt="Ministerstvo financií Slovenskej republiky" class="logo">
+    </a>
+  </div>
+
+licenceMessage: |
   <p>Prevádzkovateľom služby je Ministerstvo financií Slovenskej republiky.<br />
   Vytvorené v súlade s Jednotným dizajn manuálom elektronických služieb.</p>
-footerSupportLinks: <
+
+footerSupportLinks: |
   <nav id='footer-menu'>
       <ul id='footer-links'>
           <li><a href='#'>Kontakt</a></li>
