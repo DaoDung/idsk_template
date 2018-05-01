@@ -3,14 +3,6 @@
 #footer {
   background-color: $footer-background;
 
-  &.with-logo {
-    .open-government-licence {
-      @include media(desktop) {
-        padding-left: 85px;
-      }
-    }
-  }
-
   .footer-wrapper {
     @extend %site-width-container;
     background-color: $footer-background;
@@ -36,6 +28,55 @@
     }
   }
 
+  .footer-logo {
+    img.logo {
+      max-width: 218px;
+      padding-top: 0.1em;
+    }
+    margin: 0 0 30px 0;
+
+    @include media(desktop) {
+      display: inline-block;
+      vertical-align:top;
+      padding-right: 85px
+    }
+  }
+
+  .open-government-licence {
+    p {
+      @include core-16;
+      margin: 0;
+      padding-top: 0.1em;
+    }
+
+    @include media(desktop) {
+      display: inline-block;
+    }
+
+    ul {
+      @include core-16($line-height: (24/16), $line-height-640: (24/16));
+      display: inline-block;
+      list-style: none;
+      margin: 5px 0;
+      padding: 0;
+  
+      @include media(desktop) {
+        margin: 5px 0;
+      }
+  
+      li {
+        display: inline-block;
+        margin: 0 15px 0 0;
+  
+        @include ie-lte(7) {
+          display: inline;
+          margin-right: 0;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
   .footer-meta {
     @extend %contain-floats;
     padding-bottom: 60px;
@@ -55,69 +96,6 @@
       @include ie-lte(7) {
         float: left;
         display: block;
-      }
-
-      ul {
-        @include core-16($line-height: (24/16), $line-height-640: (24/16));
-        display: inline-block;
-        list-style: none;
-        margin: 5px 0;
-        padding: 0;
-
-        @include media(desktop) {
-          margin: 5px 0;
-        }
-
-        li {
-          display: inline-block;
-          margin: 0 15px 0 0;
-
-          @include ie-lte(7) {
-            display: inline;
-            margin-right: 0;
-            padding-right: 15px;
-          }
-        }
-      }
-
-      .open-government-licence {
-        clear: left;
-        position: relative;
-
-        @include ie(6) {
-          zoom: 1;
-        }
-
-        .logo {
-          margin-bottom: 1em;
-          padding-top: 0;
-          @include media(desktop) {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 41px;
-            height: 100%;
-          }
-
-          a {
-            display: block;
-            width: 41px;
-            height: 17px;
-            overflow: hidden;
-            text-indent: -999em;
-            background: image-url("images/open-government-licence.png") 0 0 no-repeat;
-            @include device-pixel-ratio() {
-              background-image: image-url("images/open-government-licence_2x.png");
-              background-size: 41px 17px;
-            }
-          }
-        }
-
-        p {
-          @include core-16;
-          margin: 0;
-          padding-top: 0.1em;
-        }
       }
     }
 
@@ -147,11 +125,6 @@
         display: block;
 
         text-decoration: none;
-
-        img.logo {
-          max-width: 218px;
-        }
-
       }
     }
   }
