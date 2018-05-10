@@ -1,3 +1,3 @@
 module IdskTemplate
-  VERSION = "0.24.6"
+  VERSION = "0.24.7"
 end
